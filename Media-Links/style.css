@@ -4,26 +4,17 @@
     box-sizing: border-box;
 }
 
-:root {
-    --text-color: white;
-    --bg-url: url(./assets/bg-mobile.jpg);
-}
-
-.light {
-    --text-color: black;
-    --bg-url: url(./assets/bg-mobile-light.jpg)
-}
-
 body {
-    background-image: url(./assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(./assets/sky\ night.gif); 
     background-size: cover;
 }
 
 body *{
     font-family: 'Inter', sans-serif;
-    color: var(--text-color)
+    color: white;
 }
 
 #container {
@@ -32,6 +23,25 @@ body *{
     margin-top: 56px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#switch {
+    position: relative;
+    width: 64px;
+
+    margin: 4px auto;
+}
+
+
+#switch button{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    cursor: pointer;
 }
 
 #profile {
@@ -53,6 +63,7 @@ body *{
 ul {
     list-style: none;
     
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 16px;
