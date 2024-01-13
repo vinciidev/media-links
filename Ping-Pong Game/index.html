@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping-Pong</title>
+</head>
+<body>
+
+
+<canvas></canvas>
+<script>
+    const canvasEl = document.querySelector("canvas"),
+     canvasCtx = canvasEl.getContext("2d")
+
+    function setup() {
+        canvasEl.width = canvasCtx.width = window.innerWidth
+        canvasEl.height = canvasCtx.height = window.innerHeight
+    }
+
+    function draw() {
+        canvasCtx.fillStyle = "#286047"
+        canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+
+        
+        canvasCtx.fillStyle ="#fff"
+        
+        const lineEsp = 15
+        const x = window.innerWidth / 2 - lineEsp /2
+        const y = 0
+        const w = lineEsp
+        const h = window.innerWidth
+
+        canvasCtx.fillRect(x, y, w, h )
+
+
+        canvasCtx.fillRect(20, 100, lineEsp, 200)
+        
+        canvasCtx.fillRect(window.innerWidth - lineEsp -20, 120, lineEsp, 200)
+
+
+
+        canvasCtx.beginPath()
+        canvasCtx.arc(200,300, 20, 0, 2 * Math.PI, false)
+        canvasCtx.fill()
+
+
+        canvasCtx.font = "bold 72px Arial"
+        canvasCtx.textAlign = "center"
+        canvasCtx.textBaseline = "top"
+        canvasCtx.fillStyle = "#01341D"    
+        canvasCtx.fillText("3", window.innerWidth / 4, 50)
+        canvasCtx.fillText("1", window.innerWidth / 4 + window.innerWidth /2, 50)
+
+    
+    }
+
+
+    setup()
+    draw()
+</script>
+    
+    
+</body>
+</html>

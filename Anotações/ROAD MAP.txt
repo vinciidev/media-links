@@ -1,0 +1,19 @@
+* Principal:
+- Finalizar o curso dev samurai
+
+
+*Secundário
+- Curso de angular banco pan
+- Personalizar o github
+- Framework: Tailwhindcss
+- Fazer o front aplicativo de banco (mobile)
+- Portugol (Gustavo Guanabara)
+
+
+*Futuramente
+- Python
+- Linguagens que estão aquecendo: (Go, Rust)
+
+
+
+*Aplicações de IA em Medicina

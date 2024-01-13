@@ -1,0 +1,73 @@
+Robo - lampada:
+
+robo (pega uma lampada nova)
+
+verifica se a energia está desligada
+	se estiver desligada: prosseguir
+    	se estiver ligada: ir desligar
+
+verifica se a altura da escada alcança o bocal da lampada
+	se estiver subir
+	se não estiver avisar ao operar para ajustar
+
+robo (sobe a escada)
+	ao chegar no topo parar
+robo (remove a lampada antiga)
+	guardar a lampada
+robo (coloca a lampada nova)
+robo (desce a escada)
+robo (ligar o interruptor para testar a lampada nova)
+	se não funcionar buscar uma lampada nova no estoque
+	se funcionar, pare;
+
+Exc - Fazer uma prova:
+
+a depender das instruções da prova pegue: caneta(azul) ou caneta(preta)
+	pegue a caneta (cor) 
+abra a prova
+leia atentamente o que a questão diz:
+	se não souber passe para a proxima questão:
+	se souber analise as respostas
+		marque a alternativa a qual corresponde com a pergunta
+
+passe para proxima questão e repita o processo:
+	se não souber passe para a proxima questão:
+	se souber analise as respostas
+		marque a alternativa a qual corresponde com a pergunta
+
+	
+
+Exc - Jogar jogo da forca:
+
+uma palavra existente no PT-BR será escolhida sem que os jogadores saibam
+	cada letra dessa palavra será marcada por (_) e será oculta.
+cada jogador irá deduzir uma letra por vez.
+	se o jogador falar uma letra que existe na palavra o (_) será substituido pela letra que o jogador acertou.
+	se errar a forca em que o jogador está preso será adicionada um parte do seu corpo [cabeça, corpo, braços, pernas]
+
+se o jogador tiver todas as parte do seu corpo na forca, perderá.
+se os jogadores acertarem a palavra antes de perderem, ganham. 
+
+Exc - Jogar jogo da velha:
+
+um plano de 3x3, com 9 quadrados internos de 1x1 será posto
+	o quadrado só poderá ser preenchido uma única vez
+
+o jogador que representa o 'X' jogará primeiro
+	poderá marcar UM quadrado qualquer lugar do plano 3x3
+o jogador que representa o 'O' jogará depois
+	poderá marcar UM quadrado qualquer lugar do plano 3x3
+	exceto aonde já foi marcado pelo jogador 'X'
+o processo se repetirá
+
+quem marcar uma linha (horizontal, vertical ou diagonal) com 3 quadrados ganha
+se todos os quadrados forem preenchidos sem ninguem ganhar, reinicia
+
+Exc - Leão, Cabra e Grama - A cabra nunca com o leão, e a cabra nunca com a grama
+
+primeira viagem
+	o bote irá com Leão e Grama
+segunda viagem
+	levar a cabra 
+
+
